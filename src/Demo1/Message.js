@@ -1,11 +1,15 @@
 import React from 'react'
 
-const Message = React.createClass({
-  render () {
-    return (
-      <h1>{ this.props.message }</h1>
-    )
-  }
-})
+const { string } = React.PropTypes
 
-export default Message
+const Message2 = (props) => {
+  return (
+    <h1>{ props.message }</h1>
+  )
+}
+
+Message2.propTypes = {
+  message: string
+}
+
+export default Message2
