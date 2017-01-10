@@ -1,7 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
+import MyFirstComponent from './MyFirstComponent'
 
 render(
-    React.createElement('h1', null, 'Hello JSUpskill!!!'),
-    document.getElementById('app')
+  <MyFirstComponent />,
+  document.getElementById('app')
 )
