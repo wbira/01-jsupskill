@@ -3,7 +3,7 @@ import React from 'react'
 const Message = React.createClass({
   render () {
     return (
-      <h1>Hello from message component!</h1>
+      <h1>{ this.props.message }</h1>
     )
   }
 })
