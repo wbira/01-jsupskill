@@ -1,9 +1,12 @@
 import React from 'react'
+import Message from './Message'
 
 const MyFirstComponent = React.createClass({
   render () {
     return (
-      <h1>Hello from first component!</h1>
+      <div>
+        <Message />
+      </div>
     )
   }
 })
