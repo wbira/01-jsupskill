@@ -1,6 +1,16 @@
 import React from 'react'
 import Message from './Message'
 
+const Button = React.createClass({
+  render () {
+    return (
+      <div>
+        <button onClick={this.props.onclick}>Count down!</button>
+      </div>
+    )
+  }
+})
+
 const MyFirstComponent = React.createClass({
   getInitialState () {
     return {
@@ -19,8 +29,7 @@ const MyFirstComponent = React.createClass({
       <div>
         <Message message='Hello 1'/>
         <Message message={this.state.value}/>
-        <button onClick={this.onClick.bind(this, 1)} disabled={this.state.value >= 5}>Count up!</button>
-        <button onClick={this.onClick.bind(this, -1)}>Count down!</button>
+        <Button onclick={this.onClick.bind(this, 1)} />
       </div>
     )
   }

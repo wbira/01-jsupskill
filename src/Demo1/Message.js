@@ -1,6 +1,6 @@
 import React from 'react'
 
-const { string } = React.PropTypes
+const { number } = React.PropTypes
 
 const Message2 = (props) => {
   return (
@@ -9,7 +9,7 @@ const Message2 = (props) => {
 }
 
 Message2.propTypes = {
-  message: string
+  message: number
 }
 
 export default Message2
